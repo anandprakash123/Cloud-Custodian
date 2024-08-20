@@ -1,0 +1,14 @@
+
+policies:
+  - name: list-iam-users
+    resource: iam-user
+    actions:
+      - type: notify
+        to:
+          - anandprakash12363@gmail.com
+        transport:
+          type: sns
+          topic: arn:aws:sns:us-east-1:464115788284:Linux
+          subject: "List of IAM Users"
+        template: default
+
