@@ -1,0 +1,146 @@
+[
+{
+"AmiLaunchIndex": 0,
+"ImageId": "ami-00beae93a2d981137",
+"InstanceId": "i-023e72345cfe294bf",
+"InstanceType": "t2.micro",
+"KeyName": "AMIKEY",
+"LaunchTime": "2024-06-10T09:44:10+00:00",
+"Monitoring": {
+"State": "disabled"
+},
+"Placement": {
+"AvailabilityZone": "us-east-1b",
+"GroupName": "",
+"Tenancy": "default"
+},
+"PrivateDnsName": "ip-172-31-21-191.ec2.internal",
+"PrivateIpAddress": "172.31.21.191",
+"ProductCodes": [],
+"PublicDnsName": "ec2-54-160-168-170.compute-1.amazonaws.com",
+"PublicIpAddress": "54.160.168.170",
+"State": {
+"Code": 16,
+"Name": "running"
+},
+"StateTransitionReason": "",
+"SubnetId": "subnet-0c3d400999f07dcff",
+"VpcId": "vpc-09ff2b35e79113291",
+"Architecture": "x86_64",
+"BlockDeviceMappings": [
+{
+"DeviceName": "/dev/xvda",
+"Ebs": {
+"AttachTime": "2024-06-10T09:44:11+00:00",
+"DeleteOnTermination": true,
+"Status": "attached",
+"VolumeId": "vol-09fe467b1670c7331"
+}
+}
+],
+"ClientToken": "a9fd2a51-2227-4ba8-92ae-44df4a8b0775",
+"EbsOptimized": false,
+"EnaSupport": true,
+"Hypervisor": "xen",
+"NetworkInterfaces": [
+{
+"Association": {
+"IpOwnerId": "amazon",
+"PublicDnsName": "ec2-54-160-168-170.compute-1.amazonaws.com",
+"PublicIp": "54.160.168.170"
+},
+"Attachment": {
+"AttachTime": "2024-06-10T09:44:10+00:00",
+"AttachmentId": "eni-attach-047d949cb9bc3356a",
+"DeleteOnTermination": true,
+"DeviceIndex": 0,
+"Status": "attached",
+"NetworkCardIndex": 0
+},
+"Description": "",
+"Groups": [
+{
+"GroupName": "launch-wizard-32",
+"GroupId": "sg-064f58095013c4765"
+}
+],
+"Ipv6Addresses": [],
+"MacAddress": "0a:ff:e4:e8:2c:a7",
+"NetworkInterfaceId": "eni-0c002a927f0e68743",
+"OwnerId": "464115788284",
+"PrivateDnsName": "ip-172-31-21-191.ec2.internal",
+"PrivateIpAddress": "172.31.21.191",
+"PrivateIpAddresses": [
+{
+"Association": {
+"IpOwnerId": "amazon",
+"PublicDnsName": "ec2-54-160-168-170.compute-1.amazonaws.com",
+"PublicIp": "54.160.168.170"
+},
+"Primary": true,
+"PrivateDnsName": "ip-172-31-21-191.ec2.internal",
+"PrivateIpAddress": "172.31.21.191"
+}
+],
+"SourceDestCheck": true,
+"Status": "in-use",
+"SubnetId": "subnet-0c3d400999f07dcff",
+"VpcId": "vpc-09ff2b35e79113291",
+"InterfaceType": "interface"
+}
+],
+"RootDeviceName": "/dev/xvda",
+"RootDeviceType": "ebs",
+"SecurityGroups": [
+{
+"GroupName": "launch-wizard-32",
+"GroupId": "sg-064f58095013c4765"
+}
+],
+"SourceDestCheck": true,
+"Tags": [
+{
+"Key": "Name",
+"Value": "custodian"
+}
+],
+"VirtualizationType": "hvm",
+"CpuOptions": {
+"CoreCount": 1,
+"ThreadsPerCore": 1
+},
+"CapacityReservationSpecification": {
+"CapacityReservationPreference": "open"
+},
+"HibernationOptions": {
+"Configured": false
+},
+"MetadataOptions": {
+"State": "applied",
+"HttpTokens": "required",
+"HttpPutResponseHopLimit": 2,
+"HttpEndpoint": "enabled",
+"HttpProtocolIpv6": "disabled",
+"InstanceMetadataTags": "disabled"
+},
+"EnclaveOptions": {
+"Enabled": false
+},
+"BootMode": "uefi-preferred",
+"PlatformDetails": "Linux/UNIX",
+"UsageOperation": "RunInstances",
+"UsageOperationUpdateTime": "2024-06-10T09:44:10+00:00",
+"PrivateDnsNameOptions": {
+"HostnameType": "ip-name",
+"EnableResourceNameDnsARecord": true,
+"EnableResourceNameDnsAAAARecord": false
+},
+"MaintenanceOptions": {
+"AutoRecovery": "default"
+},
+"CurrentInstanceBootMode": "legacy-bios",
+"c7n:MatchedFilters": [
+"tag:Environment"
+]
+}
+]

@@ -1,0 +1,10 @@
+policies:
+  - name: delete-ebs-volumes-by-tag
+    resource: ebs
+    filters:
+      - type: value
+        key: "tag:Delete"
+        value: "true"
+    actions:
+      - delete
+

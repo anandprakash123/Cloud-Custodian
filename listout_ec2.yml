@@ -1,0 +1,14 @@
+policies:
+  - name: ec2-no-tag-name
+    resource: aws.ec2
+    filters:
+      - "tag:Name": absent
+    actions:
+      - type: notify
+        template: default
+        subject: "EC2 Instances without 'Name' tag"
+        to:
+          - anandprakash12363@gmail.com
+        transport:
+          type: sqs
+          queue: https:arn:aws:sns:us-east-1:464115788284:Linux

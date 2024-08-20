@@ -1,0 +1,19 @@
+policies:
+  - name: find-ebs-volumes-for-review
+    resource: ebs
+    filters:
+      - type: value
+        key: CreateTime
+        value_type: age
+        op: greater-than
+        value: 30  
+    actions:
+      - type: notify
+        template: default
+        subject: "EBS Volumes for Review"
+        to:
+          - anandprakash12363@gmail.com
+        transport:
+          type: sns
+          topic: arn:aws:sns:us-east-1:464115788284:Linux
+

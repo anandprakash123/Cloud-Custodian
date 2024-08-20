@@ -1,0 +1,19 @@
+[
+  {
+    "Attachments": [],
+    "AvailabilityZone": "us-east-1a",
+    "CreateTime": "2024-07-31T10:54:35.427000+00:00",
+    "Encrypted": false,
+    "Size": 8,
+    "SnapshotId": "",
+    "State": "available",
+    "VolumeId": "vol-01dd458400de2c318",
+    "Iops": 100,
+    "VolumeType": "gp2",
+    "MultiAttachEnabled": false,
+    "c7n:MatchedFilters": [
+      "State",
+      "CreateTime"
+    ]
+  }
+]

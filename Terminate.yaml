@@ -1,0 +1,13 @@
+policies:
+  - name: terminate-non-production-environment-instances
+    resource: ec2
+    description: |
+      Terminates EC2 instances that have an "Environment" tag where the value is not "CloudCustodian".
+    filters:
+      - type: value
+        key: "tag:Name"
+        op: ne
+        value: "CloudCustodian"
+    actions:
+      - terminate
+

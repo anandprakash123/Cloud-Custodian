@@ -1,0 +1,4 @@
+2024-05-29 12:56:44,116 - custodian.policy - INFO - policy:stop-all-instances resource:ec2 region:us-east-1 count:1 time:2.60
+2024-05-29 12:56:45,528 - custodian.policy - INFO - policy:stop-all-instances action:stop resources:1 execution_time:1.41
+2024-06-10 15:18:33,291 - custodian.policy - INFO - policy:stop-all-instances resource:ec2 region:us-east-1 count:1 time:1.28
+2024-06-10 15:18:34,532 - custodian.policy - INFO - policy:stop-all-instances action:stop resources:1 execution_time:1.24

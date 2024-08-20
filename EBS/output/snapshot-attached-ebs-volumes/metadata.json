@@ -1,0 +1,84 @@
+{
+  "policy": {
+    "name": "snapshot-attached-ebs-volumes",
+    "resource": "ebs",
+    "filters": [
+      {
+        "State": "in-use"
+      }
+    ],
+    "actions": [
+      {
+        "type": "snapshot",
+        "copy-tags": [
+          "Name",
+          "snapshot"
+        ]
+      }
+    ]
+  },
+  "version": "0.9.36",
+  "execution": {
+    "id": "ff71ff1b-169d-47f7-9d39-3a09e3c65975",
+    "start": 1722929009.587655,
+    "end_time": 1722929013.1739922,
+    "duration": 3.586337089538574
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "464115788284",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "output",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "snapshot-attached-ebs-volumes.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeVolumes": 1,
+    "ec2.CreateSnapshot": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2024-08-06T12:53:31.344612",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2024-08-06T12:53:31.344634",
+      "Value": 1.7464284896850586,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2024-08-06T12:53:33.173981",
+      "Value": 1.828387975692749,
+      "Unit": "Seconds"
+    }
+  ]
+}

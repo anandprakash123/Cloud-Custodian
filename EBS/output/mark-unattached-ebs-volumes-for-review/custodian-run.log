@@ -1,0 +1,8 @@
+2024-08-13 17:58:53,426 - custodian.policy - INFO - policy:mark-unattached-ebs-volumes-for-review resource:ebs region:us-east-1 count:0 time:1.43
+2024-08-13 18:09:04,594 - custodian.policy - INFO - policy:mark-unattached-ebs-volumes-for-review resource:ebs region:us-east-1 count:0 time:0.00
+2024-08-13 18:11:37,788 - custodian.policy - INFO - policy:mark-unattached-ebs-volumes-for-review resource:ebs region:us-east-1 count:0 time:0.00
+2024-08-13 18:15:58,960 - custodian.policy - INFO - policy:mark-unattached-ebs-volumes-for-review resource:ebs region:us-east-1 count:0 time:1.28
+2024-08-13 18:17:15,915 - custodian.policy - INFO - policy:mark-unattached-ebs-volumes-for-review resource:ebs region:us-east-1 count:0 time:0.00
+2024-08-13 18:17:30,697 - custodian.policy - INFO - policy:mark-unattached-ebs-volumes-for-review resource:ebs region:us-east-1 count:0 time:0.00
+2024-08-13 20:31:31,818 - custodian.policy - INFO - policy:mark-unattached-ebs-volumes-for-review resource:ebs region:us-east-1 count:1 time:1.72
+2024-08-13 20:31:33,569 - custodian.policy - INFO - policy:mark-unattached-ebs-volumes-for-review action:tag resources:1 execution_time:1.75

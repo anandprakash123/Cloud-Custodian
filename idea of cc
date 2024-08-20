@@ -1,0 +1,37 @@
+ Jenkins Server (Jenkins Master)
+    |
+    |
+    |
+    v
+ Jenkins Pipeline Job
+    |
+    |
+    |
+    v
+ Load AWS Credentials from   
+ Jenkins Credentials  
+    |
+    |
+    |
+    v
+Docker Container (c7n Image)
+    |
+    |
+    |
+    v
+Cloud Custodian Execution   
+ for Each AWS Account     
+-----------------
+Assume Role in Each Account 
+Run Custodian Policies    
+    |
+    |
+    |
+    v
+  Policy Output         
+(S3 / Local Storage)
+    |
+    |
+    |
+    v
+Generate Logs and Reports in Jenkins  

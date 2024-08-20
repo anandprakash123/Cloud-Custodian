@@ -1,0 +1,15 @@
+2024-06-20 17:13:25,545 - custodian.policy - INFO - policy:list-iam-users resource:iam-user region:us-east-1 count:1 time:0.00
+2024-06-20 17:13:27,506 - custodian.actions - INFO - sent message:97f971a2-1ab3-5869-a07d-2f4c02ace22a policy:list-iam-users template:default count:1
+2024-06-20 17:13:27,507 - custodian.policy - INFO - policy:list-iam-users action:notify resources:1 execution_time:1.96
+2024-06-20 17:52:56,811 - custodian.policy - INFO - policy:list-iam-users resource:iam-user region:us-east-1 count:1 time:2.44
+2024-06-20 17:52:59,760 - custodian.actions - INFO - sent message:a23aab02-a807-58d8-8498-f5ec89643031 policy:list-iam-users template:default count:1
+2024-06-20 17:52:59,761 - custodian.policy - INFO - policy:list-iam-users action:notify resources:1 execution_time:2.95
+2024-06-20 17:53:55,199 - custodian.policy - INFO - policy:list-iam-users resource:iam-user region:us-east-1 count:1 time:0.00
+2024-06-20 17:53:57,345 - custodian.actions - INFO - sent message:6709e144-d4d9-569c-94f5-bfaaf544227f policy:list-iam-users template:default count:1
+2024-06-20 17:53:57,346 - custodian.policy - INFO - policy:list-iam-users action:notify resources:1 execution_time:2.15
+2024-06-20 17:56:26,813 - custodian.policy - INFO - policy:list-iam-users resource:iam-user region:us-east-1 count:1 time:0.00
+2024-06-20 17:56:28,924 - custodian.actions - INFO - sent message:121947c5-b262-5493-94ab-192b9056840d policy:list-iam-users template:default count:1
+2024-06-20 17:56:28,931 - custodian.policy - INFO - policy:list-iam-users action:notify resources:1 execution_time:2.12
+2024-06-20 18:41:23,820 - custodian.policy - INFO - policy:list-iam-users resource:iam-user region:us-east-1 count:1 time:2.15
+2024-06-20 18:41:26,004 - custodian.actions - INFO - sent message:4c0c1749-5625-5b01-b2b6-49a77a984088 policy:list-iam-users template:default count:1
+2024-06-20 18:41:26,005 - custodian.policy - INFO - policy:list-iam-users action:notify resources:1 execution_time:2.18

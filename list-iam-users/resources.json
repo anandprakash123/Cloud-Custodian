@@ -1,0 +1,13 @@
+[
+  {
+    "Path": "/",
+    "UserName": "Anand@21",
+    "UserId": "AIDAWYD3U5H6COBNZFYKM",
+    "Arn": "arn:aws:iam::464115788284:user/Anand@21",
+    "CreateDate": "2024-06-20T11:10:04+00:00",
+    "PermissionsBoundary": {
+      "PermissionsBoundaryType": "Policy",
+      "PermissionsBoundaryArn": "arn:aws:iam::aws:policy/AmazonSQSFullAccess"
+    }
+  }
+]

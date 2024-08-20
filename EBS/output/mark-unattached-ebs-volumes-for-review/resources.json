@@ -1,0 +1,26 @@
+[
+  {
+    "Attachments": [],
+    "AvailabilityZone": "us-east-1a",
+    "CreateTime": "2024-08-13T12:19:04.956000+00:00",
+    "Encrypted": false,
+    "Size": 8,
+    "SnapshotId": "",
+    "State": "available",
+    "VolumeId": "vol-0260da15053b4f19d",
+    "Iops": 3000,
+    "Tags": [
+      {
+        "Key": "Review",
+        "Value": "\"true\""
+      }
+    ],
+    "VolumeType": "gp3",
+    "MultiAttachEnabled": false,
+    "Throughput": 125,
+    "c7n:MatchedFilters": [
+      "State",
+      "CreateTime"
+    ]
+  }
+]

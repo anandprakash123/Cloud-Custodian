@@ -1,0 +1,72 @@
+{
+  "policy": {
+    "name": "stop-instances-off-hours-test",
+    "resource": "ec2",
+    "description": "Stop EC2 instances during off-hours to save costs.\nRuns every 5 minutes for testing purposes.\n",
+    "filters": [
+      {
+        "tag:Name": "first instance"
+      }
+    ],
+    "actions": [
+      {
+        "type": "stop"
+      }
+    ],
+    "mode": {
+      "type": "periodic",
+      "schedule": "rate(5 minutes)",
+      "role": "arn:aws:iam::464115788284:role/CustodianLambdaExecutionRole",
+      "tags": {
+        "custodian-info": "mode=periodic:version=0.9.36"
+      }
+    }
+  },
+  "version": "0.9.36",
+  "execution": {
+    "id": "9ef82224-4d18-4341-93bb-830144cf9707",
+    "start": 1722237115.8667374,
+    "end_time": 1722237119.5179799,
+    "duration": 3.65124249458313
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "464115788284",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": ".",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "stop-instances-off-hours.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "lambda.GetFunction": 1,
+    "events.DescribeRule": 1,
+    "lambda.AddPermission": 1,
+    "events.ListTargetsByRule": 1
+  },
+  "metrics": []
+}

@@ -1,0 +1,6 @@
+policies:
+  - name: running-ec2-instances
+    resource: ec2
+    filters:
+      - State.Name: running
+

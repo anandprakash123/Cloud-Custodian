@@ -1,0 +1,16 @@
+policies:
+  - name: terminate-unused-ec2-instances
+    resource: aws.ec2
+    filters:
+      - type: value
+        key: State.Name
+        value: stopped
+      - type: state-age
+        op: ge
+        minutes: 3
+      - type: value
+        key: "tag:Name"
+        value: "Cloud"
+    actions:
+      - terminate
+

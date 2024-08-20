@@ -1,0 +1,2 @@
+2024-05-29 12:38:58,820 - custodian.policy - INFO - policy:running-ec2-instances resource:ec2 region:us-east-1 count:1 time:2.71
+2024-07-23 13:03:32,417 - custodian.policy - INFO - policy:running-ec2-instances resource:ec2 region:us-east-1 count:0 time:1.39

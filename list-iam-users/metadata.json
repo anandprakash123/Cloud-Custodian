@@ -1,0 +1,86 @@
+{
+  "policy": {
+    "name": "list-iam-users",
+    "resource": "iam-user",
+    "actions": [
+      {
+        "type": "notify",
+        "to": [
+          "anandprakash12363@gmail.com"
+        ],
+        "transport": {
+          "type": "sns",
+          "topic": "arn:aws:sns:us-east-1:464115788284:Linux",
+          "subject": "List of IAM Users"
+        },
+        "template": "default"
+      }
+    ]
+  },
+  "version": "0.9.36",
+  "execution": {
+    "id": "a0945207-c99a-4fec-bb65-5c879c9f2b66",
+    "start": 1718889081.6677108,
+    "end_time": 1718889086.0061388,
+    "duration": 4.338428020477295
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "464115788284",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": ".",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "IAM_MFA.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListUsers": 1,
+    "iam.GetUser": 1,
+    "iam.ListAccountAliases": 1,
+    "sns.Publish": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2024-06-20T18:41:23.821039",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2024-06-20T18:41:23.821060",
+      "Value": 2.14743709564209,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2024-06-20T18:41:26.006113",
+      "Value": 2.184300661087036,
+      "Unit": "Seconds"
+    }
+  ]
+}

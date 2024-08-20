@@ -1,0 +1,13 @@
+policies:
+  - name: delete-unattached-ebs-volumes
+    resource: ebs
+    filters:
+      - State: available
+      - type: value
+        key: CreateTime
+        value_type: age
+        op: greater-than
+        value: .0035  # 5 minutes
+    actions:
+      - delete
+

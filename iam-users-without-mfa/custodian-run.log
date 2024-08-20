@@ -1,0 +1,32 @@
+2024-06-18 16:11:08,176 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.24
+2024-06-18 16:13:54,148 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:0.00
+2024-06-18 16:26:28,394 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:3.06
+2024-06-18 16:34:43,174 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.10
+2024-06-18 17:01:45,297 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:3.54
+2024-06-18 17:02:14,072 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.19
+2024-06-18 17:04:45,522 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.27
+2024-06-18 17:05:56,997 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.08
+2024-06-18 17:06:55,160 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.19
+2024-06-18 18:02:27,406 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:3.38
+2024-06-18 18:02:44,908 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.12
+2024-06-18 18:03:04,600 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.21
+2024-06-18 18:10:31,510 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.21
+2024-06-18 18:15:27,089 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.23
+2024-06-18 20:37:00,694 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:3.59
+2024-06-20 16:48:04,101 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:3.26
+2024-06-20 16:48:41,960 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.11
+2024-06-20 17:03:34,636 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:3.16
+2024-06-20 17:05:06,641 - custodian.policy - DEBUG - Running policy:iam-users-without-mfa resource:iam-user region:us-east-1 c7n:0.9.36
+2024-06-20 17:05:06,642 - custodian.resources.user - DEBUG - Using cached c7n.resources.iam.User: 1
+2024-06-20 17:05:06,642 - custodian.filters - DEBUG - Querying 1 users' mfa devices
+2024-06-20 17:05:07,765 - custodian.resources.user - DEBUG - Filtered from 1 to 0 user
+2024-06-20 17:05:07,766 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.12
+2024-06-20 17:05:07,768 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:iam-users-without-mfa restype:iam-user scope:policy
+2024-06-20 17:05:07,768 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:iam-users-without-mfa restype:iam-user
+2024-06-20 17:06:05,620 - custodian.policy - DEBUG - Running policy:iam-users-without-mfa resource:iam-user region:us-east-1 c7n:0.9.36
+2024-06-20 17:06:05,621 - custodian.resources.user - DEBUG - Using cached c7n.resources.iam.User: 1
+2024-06-20 17:06:05,625 - custodian.filters - DEBUG - Querying 1 users' mfa devices
+2024-06-20 17:06:06,679 - custodian.resources.user - DEBUG - Filtered from 1 to 0 user
+2024-06-20 17:06:06,680 - custodian.policy - INFO - policy:iam-users-without-mfa resource:iam-user region:us-east-1 count:0 time:1.06
+2024-06-20 17:06:06,682 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:iam-users-without-mfa restype:iam-user scope:policy
+2024-06-20 17:06:06,682 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:iam-users-without-mfa restype:iam-user

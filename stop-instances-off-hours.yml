@@ -1,0 +1,15 @@
+policies:
+  - name: stop-instances-off-hours-test
+    resource: ec2
+    description: |
+      Stop EC2 instances during off-hours to save costs.
+      Runs every 5 minutes for testing purposes.
+    filters:
+      - "tag:Name": "first instance"
+    actions:
+      - type: stop
+    mode:
+      type: periodic
+      schedule: "rate(5 minutes)" 
+      role: arn:aws:iam::464115788284:role/CustodianLambdaExecutionRole
+

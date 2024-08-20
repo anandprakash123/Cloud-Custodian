@@ -1,0 +1,91 @@
+{
+  "policy": {
+    "name": "ec2-no-tag-name",
+    "resource": "aws.ec2",
+    "filters": [
+      {
+        "tag:Name": "absent"
+      }
+    ],
+    "actions": [
+      {
+        "type": "notify",
+        "template": "default",
+        "subject": "EC2 Instances without 'Name' tag",
+        "to": [
+          "anandprakash12363@gmail.com"
+        ],
+        "transport": {
+          "type": "sqs",
+          "queue": "https:arn:aws:sns:us-east-1:464115788284:Linux"
+        }
+      }
+    ]
+  },
+  "version": "0.9.36",
+  "execution": {
+    "id": "b5875cdf-7a97-4161-ab66-9c5b999ddb47",
+    "start": 1718889255.4590976,
+    "end_time": 1718889260.6957173,
+    "duration": 5.236619710922241
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "464115788284",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": ".",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "listout_ec2.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeInstances": 1,
+    "ec2.DescribeTags": 1,
+    "iam.ListAccountAliases": 1,
+    "sqs.SendMessage": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2024-06-20T18:44:18.246837",
+      "Value": 3,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2024-06-20T18:44:18.246859",
+      "Value": 2.7817912101745605,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "PolicyException",
+      "Timestamp": "2024-06-20T18:44:20.695670",
+      "Value": 1,
+      "Unit": "Count"
+    }
+  ]
+}

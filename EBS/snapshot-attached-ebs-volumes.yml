@@ -1,0 +1,11 @@
+policies:
+  - name: snapshot-attached-ebs-volumes
+    resource: ebs
+    filters:
+      - State: in-use
+    actions:
+      - type: snapshot
+        copy-tags:
+          - "Name"  # Example tag; replace with your specific tags
+          - "snapshot"  # Example tag; replace with your specific tags
+

@@ -1,0 +1,22 @@
+policies:
+  - name: manage-instance-lifecycle
+    resource: ec2
+    description: 
+      Manage EC2 instances lifecycle. Stop instances on Saturday morning at 9 AM UTC
+      and start instances on Monday at 12 AM UTC.
+    filters:
+      - "tag:Name": "first instance"
+    actions:
+      - type: stop
+        # This action is scheduled to run on Saturdays at 9 AM UTC
+        mode:
+          type: periodic
+          schedule: "cron(0 9 ? * SAT *)"
+          role: arn:aws:iam::464115788284:role/CustodianLambdaExecutionRole
+      - type: start
+        # This action is scheduled to run on Mondays at 12 AM UTC
+        mode:
+          type: periodic
+          schedule: "cron(0 0 ? * MON *)"
+          role: arn:aws:iam::464115788284:role/CustodianLambdaExecutionRole
+

@@ -1,0 +1,2 @@
+2024-08-06 12:53:31,344 - custodian.policy - INFO - policy:snapshot-attached-ebs-volumes resource:ebs region:us-east-1 count:1 time:1.75
+2024-08-06 12:53:33,173 - custodian.policy - INFO - policy:snapshot-attached-ebs-volumes action:createsnapshot resources:1 execution_time:1.83

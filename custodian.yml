@@ -1,0 +1,8 @@
+policies:
+  - name: stop-all-instances
+    resource: ec2
+    filters:
+      - "tag:Environment": absent
+    actions:
+      - stop
+
